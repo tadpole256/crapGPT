@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>CrapGPT</title>
+    <style>
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .header {
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+      .input-container {
+        padding: 20px;
+        background-color: white;
+      }
+      .prompt-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+      }
+      .submit-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .response-container {
+        padding: 20px;
+        background-color: white;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>CrapGPT</h1>
+      </div>
+      <div class="input-container">
+        <p>Enter a text prompt:</p>
+        <input type="text" id="prompt" class="prompt-input" onkeydown="if (event.keyCode == 13) document.getElementById('submit-button').click()">
+        <br><br>
+        <button id="submit-button" onclick="displayResponse()" class="submit-button">Submit</button>
+      </div>
+      <div class="response-container">
+        <p id="response"></p>
+      </div>
+    </div>
+
+    <script>
+      function displayResponse() {
+        document.getElementById("response").innerHTML = "💩💩💩💩💩💩💩";
+      }
+    </script>
+  </body>
+</html>
